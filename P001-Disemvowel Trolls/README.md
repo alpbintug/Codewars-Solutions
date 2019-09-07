@@ -13,3 +13,13 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 
 Note: for this kata y isn't considered a vowel.
 ```
+
+#### Solution:
+
+The solution I tried on this problem is truly basic, what we do is;
+```
+We create an empty string
+We check the original string character by character
+If the current character is not a vowel, concatenate it to new string
+Once we finished the original string, return the new string
+```
