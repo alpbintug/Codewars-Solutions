@@ -35,4 +35,16 @@ productFib(800) # should return [34, 55, false],
 
 #### Solution
 
-We need two variables to store our data for Fibonacci Sequence, `first = 0` and `second = 1`, we have to loop until we reach the requested value (or exceed it) so we have to check if `first * second < prod`, if this is `True` we will continue to our loop, when this condition becomes `False` then there is two cases; 1: `first * second = prod`, 2: `first * second > prod`
+We need two variables to store our data for Fibonacci Sequence, `first = 0` and `second = 1`, we have to loop until we reach the requested value (or exceed it) so we have to check if `first * second < prod`, if this is `True` we will continue to our loop and create new Fibonacci pairs using `first, second = second, first+second`, when this condition becomes `False` then there is two cases; 1: `first * second = prod`, 2: `first * second > prod`.
+
+Case 1:
+
+We need to return `True` because the conditions are met.
+
+Case 2: 
+
+We need to return `False` because the conditions are not met.
+
+So basically what we need to return is;
+
+`[first,second,first*second==prod]`
