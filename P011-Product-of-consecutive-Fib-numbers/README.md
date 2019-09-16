@@ -32,3 +32,7 @@ productFib(714) # should return [21, 34, true],
 productFib(800) # should return [34, 55, false], 
                 # since F(8) = 21, F(9) = 34, F(10) = 55 and 21 * 34 < 800 < 34 * 55
 ```
+
+#### Solution
+
+We need two variables to store our data for Fibonacci Sequence, `first = 0` and `second = 1`, we have to loop until we reach the requested value (or exceed it) so we have to check if `first * second < prod`, if this is `True` we will continue to our loop, when this condition becomes `False` then there is two cases; 1: `first * second = prod`, 2: `first * second > prod`
